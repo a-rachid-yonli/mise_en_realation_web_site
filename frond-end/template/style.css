@@ -1,0 +1,66 @@
+        .valign-wrapper {
+            margin: auto;
+            margin-top: 10rem;
+        }
+        
+        .center-align {
+            font-family: poppins;
+        }
+        
+        .brand-logo {
+            font-family: 'Fraunces', serif;
+        }
+        
+        img {
+            margin-top: 15rem;
+            margin-left: 10rem;
+        }
+        
+        @media screen and (max-width:1558px) {
+            img {
+                margin-top: 20rem;
+                margin-left: 5rem;
+            }
+        }
+        
+        @media screen and (max-width:1197px) {
+            img {
+                margin-top: 25rem;
+                margin-left: 5rem;
+            }
+        }
+        
+        .card {
+            border-radius: 8px;
+        }
+        
+        ul>li>img {
+            width: 250px;
+            position: relative;
+            bottom: 25rem;
+            right: 3.5rem;
+            border-radius: 50%;
+        }
+        
+        .compte {
+            margin-bottom: -350px;
+        }
+        
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+            flex-direction: column;
+        }
+        
+        main {
+            flex: 1 0 auto;
+        }
+        
+        .card-image {
+            padding: 0;
+        }
+        
+        .page-footer {
+            margin-top: auto;
+        }

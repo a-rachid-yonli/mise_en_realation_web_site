@@ -1,0 +1,139 @@
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@1,100&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <title>Liaison</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav>
+        <div class="nav-wrapper blue">
+            <a href="index.html" class="brand-logo  left">Logo_Site</a>
+        </div>
+    </nav>
+    <!-- inscription form form -->
+    <div class="row">
+        <div class="col s12 m4">
+            <img class="responsive-img hide-on-med-and-down valign-wrapper-img" width="500" src="../logo/logo.jpg" alt="">
+        </div>
+        <div class="col s12 m8">
+            <div class="container">
+                <div class="row  valign-wrapper ">
+                    <div class="row">
+                        <div class="col formulaire s12">
+                            <h2 class="header  center-align">Se Connecté</h2>
+                            <div class="card horizontal">
+                                <div class="col s12">
+                                    <div class="input-field col s12">
+                                        <i class="material-icons blue-text prefix">email</i>
+                                        <input value="" id="mail" type="email" class="validate">
+                                        <label class="active" for="mail">Addresse Mail</label>
+                                    </div>
+                                    <div class="input-field col s12">
+                                        <i class="material-icons blue-text prefix">lock</i>
+                                        <input value="" id="password" type="password" class="validate">
+                                        <label class="active" for="password">Mot de passe </label>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <button class="btn waves-effect  waves-light blue " type="submit" name="action"><a class="white-text" href="/template/landingPage.html">Connecté</a>
+                                        <i class="material-icons right">send</i>
+                                      </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="Connexion">
+                            <p class="deja">Ou   <a class="waves-effect waves-light  modal-trigger" href="#modal1">Créer un Compte</a></p>
+                        </span>
+                        <div class="policy">
+                            <p><a href="#">Terms & conditions</a></p>
+                            <p><a href="#">politique de confidentialité</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <div class="row">
+                <div class="input-field col s6">
+                    <i class="material-icons blue-text prefix">account_circle</i>
+                    <input value="" id="first_name" type="text" class="validate">
+                    <label class="active" for="first_name">Nom </label>
+                </div>
+                <div class="input-field  col s6">
+                    <input value="" id="last_name" type="text" class="validate">
+                    <label class="active" for="last_name">Prenom</label>
+                </div>
+                <div class="input-field col s6">
+                    <i class="material-icons blue-text prefix">work</i>
+                    <input value="" id="proffession" type="text" class="validate">
+                    <label class="active" for="proffession">Proffession</label>
+                </div>
+                <div class="input-field col s6">
+                    <i class="material-icons blue-text prefix">email</i>
+                    <input value="" id="mail" type="email" class="validate">
+                    <label class="active" for="mail">Addresse Mail</label>
+                </div>
+                <div class="input-field col s6">
+                    <i class="material-icons blue-text prefix">phone</i>
+                    <input value="" id="tel" type="tel" class="validate">
+                    <label class="active" for="tel">Tel</label>
+                </div>
+                <div class="input-field col s6">
+                    <i class="material-icons blue-text prefix">assignment_ind</i>
+                    <select>
+                    <option value="" disabled selected><span class="truncate">choisissez votre statut</span></option>
+                    <option value="1">Instructeur</option>
+                    <option value="2">Etudiant</option>
+                  </select>
+                    <label>Statut</label>
+                </div>
+                <div class="input-field col s6">
+                    <i class="material-icons blue-text prefix">lock</i>
+                    <input value="" id="password" type="password" class="validate">
+                    <label class="active" for="password">Mot de passe </label>
+                </div>
+                <div class="input-field col s6">
+                    <i class="material-icons blue-text prefix">check</i>
+                    <input value="" id="confirm_password" type="password" class="validate">
+                    <label class="active" for="confirm_password">Confirmer</label>
+                </div>
+                <div class="input-field col s6">
+                    <button class="btn waves-effect modal-close waves-light blue white-text btn-flat" type="submit" name="action"><a class="white-text" href="/template/landingPage.html">S'inscrire</a>
+                    <i class="material-icons right">send</i>
+                  </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            M.updateTextFields();
+            $('select').formSelect();
+            $('.modal').modal();
+
+        });
+    </script>
+</body>
+
+</html>
